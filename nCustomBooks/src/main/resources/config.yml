@@ -1,0 +1,52 @@
+# nCustomBooks Configuration
+
+custom_enchantments:
+  byr:
+    name: "&9Бур"
+    description: "&7Позволяет кирке ломать блоки 3x3 вокруг блока, который вы сломали."
+    effect: "explosion" # Тип эффекта при разрушении блоков (можно заменить на другой)
+    applicable_items:
+      - DIAMOND_PICKAXE
+      - NETHERITE_PICKAXE
+      - IRON_PICKAXE
+      - STONE_PICKAXE
+      - WOODEN_PICKAXE
+    permission_required: "ncustombooks.use.byr"
+  magnit:
+    name: "&aМагнит"
+    description: "&7Притягивает блоки в радиусе 10 блоков."
+    effect: "item_pull" # Тип эффекта (можно заменить на другой)
+    applicable_items:
+      - DIAMOND_PICKAXE
+      - NETHERITE_PICKAXE
+      - IRON_PICKAXE
+      - STONE_PICKAXE
+      - WOODEN_PICKAXE
+      - DIAMOND_SHOVEL
+      - NETHERITE_SHOVEL
+      - IRON_SHOVEL
+      - STONE_SHOVEL
+      - WOODEN_SHOVEL
+      - DIAMOND_AXE
+      - NETHERITE_AXE
+      - IRON_AXE
+      - STONE_AXE
+      - WOODEN_AXE
+      - DIAMOND_HOE
+      - NETHERITE_HOE
+      - IRON_HOE
+      - STONE_HOE
+      - WOODEN_HOE
+    permission_required: "ncustombooks.use.magnit"
+
+commands:
+  give:
+    description: "Выдать книгу с кастомным зачарованием."
+    permission: "ncustombooks.give" # Пермишен для использования команды /nCB give
+
+messages:
+  no_permission: "&cУ вас нет прав для выполнения этой команды!"
+  no_player_found: "&cИгрок с ником {player} не найден."
+  success_give: "&aВы выдали книгу с зачарованием {enchantment} игроку {target}."
+  no_pickaxe: "&cУ вас нет подходящего инструмента в другой руке!"
+  enchant_applied: "&aВы наложили зачарование {enchantment} на предмет!"

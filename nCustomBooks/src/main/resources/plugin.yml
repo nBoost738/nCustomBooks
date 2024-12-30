@@ -1,0 +1,22 @@
+name: nCustomBooks
+version: '${project.version}'
+main: kz.nursultan.ncustombooks.NCustomBooks
+api-version: '1.16'
+author: nursultan
+description: Плагин для добавления кастомных зачарований в Minecraft.
+commands:
+  nCB:
+    description: Управление кастомными зачарованиями.
+    usage: /nCB <subcommand>
+    permission: ncustombooks.give
+    permission-message: У вас нет прав для выполнения этой команды.
+permissions:
+  ncustombooks.give:
+    description: Позволяет выдавать кастомные книги.
+    default: op
+  ncustombooks.use.byr:
+    description: Позволяет использовать зачарование "Бур".
+    default: true
+  ncustombooks.use.magnit:
+    description: Позволяет использовать зачарование "Магнит".
+    default: true
